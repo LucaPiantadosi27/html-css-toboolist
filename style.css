@@ -1,0 +1,19 @@
+/* Resetto la pagina */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* imposto il background color del body */
+body{
+    background-color: rgba(230, 242, 247, 0.89);
+}
+.navbar{
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+.twobutton {
+    height: 50px;
+    background-color: white;
+}
