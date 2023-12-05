@@ -12,8 +12,29 @@ body{
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
 }
-
+/* impostazioni grafiche bottoni */
 .twobutton {
     height: 50px;
     background-color: white;
+}
+.buttons {
+    padding-top: 12px;
+    padding-left: 50px;
+}
+
+#A{
+    height: 30px;
+    width: 90px;
+    color: white;
+    background-color: rgb(74, 137, 253);
+    border-radius: 5px;
+    
+}
+
+#B{
+    height: 30px;
+    width: 110px;
+    background-color: white;
+    color: darkgrey;
+    border-radius: 5px;
 }
