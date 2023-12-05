@@ -18,8 +18,8 @@ body{
     height: 60px;
     background-color: white;
     margin-bottom: 5px;
-    margin-left: 200px;
-    margin-right: 200px
+    margin-left: 300px;
+    margin-right:300px
     
 }
 .buttons {
@@ -46,10 +46,10 @@ body{
 /* impostazioni grafiche testo */
 .container2{
     border-radius: 5px;
-    height: 300px;
+    height: 500px;
     background-color: white;
-    margin-left: 200px;
-    margin-right: 200px 
+    margin-left: 300px;
+    margin-right: 300px 
 }
 
 .high{
@@ -122,7 +122,23 @@ body{
 
 p{
     font-weight: bolder;
-    font-size: medium;
+    font-size: large;
+    margin-top: 8px;
+}
+/* ridimensiono e distanzio i div con il testo */
+
+.newtask{
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-bottom: 30px;
 }
 
+.today{
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
 
+.upcoming{
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
