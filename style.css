@@ -11,7 +11,18 @@ body{
     height: 80px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
+   
 }
+.Toboolisttext{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 60px;
+    
+}
+#logo{
+    height: 70px;
+}
+
 /* impostazioni grafiche bottoni */
 .twobutton {
     border-radius: 5px;
