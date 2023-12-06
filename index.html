@@ -1,69 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toboolist</title>
-    <link rel="stylesheet" href="style.css">
- 
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- creo Navbar e inserisco logo -->
-    <nav>
-        <div class="navbar">
-            <img id="logo" src="img/Logo.png" alt="">
-                
-            <p class="Toboolisttext">Toboolist</p>
-                
-        </div>
-    </nav>
-   <!-- inserisco i due buttons -->
-<div class="container">
-    <section class="twobutton">
-        <div class="buttons">
-            <button id="A">Add Task</button>
-            <button id="B">Add Section</button>
-        </div>
-
-    </section>    
-<!-- creo container con all'interno tutte le section -->
-<div class="container2">
-        <section>
-
-            <div class="newtask">
-                <p class="high">&#11206New Task</p>
-
-                <p>&#x2714 Quarterly Newsletter<span class="editorial"> Editorial </span></p> 
-
-            </div>
-        
-        </section>     
-
-        <section>
-
-            <div class="today">
-                <p class="high">&#11206Today</p>
-                <p>&#x2714 Recruiting blog post<span class="editorial">Editorial</span></p>
-                <p>&#x2714 Mobile app launch<span id="Q1">Q1 Goals</span></p>
-                <p>&#x2717 Interview john H.<span id="rec">Recruiting</span></p>
-                <p>&#x2714 Summit update to mobile storefronts<span id="mob">Mobile</span></p>
-                
-            </div>
-        
-        </section>    
     
-        <section>
+    <header>
+        <!-- logo -->
+        <img id="logo" src="./img/Logo.png" alt="logo toboolist">
+        <h1>
+            Toboolist
+        </h1>
+    </header>
 
-            <div class="upcoming">
-                <p class="high">&#11206Upcoming</p>
-            <p>&#x2717 Schedule meeting with Alex</p>
-            <p>&#x2714 Homepage refresh<span id="web">Website</span></p>
-            <p>&#x2714 Onboard new Sales team members<span id="sal">Sales</span></p>
-            <p>&#x2714 Review editorial calendar <span class="editorial">Editorial</span></p>
+    <main>
+        <section id="buttons">
+
+            <button class="btn-primary">Add task</button>
+            <button>Add section</button>
+
+        </section>
+
+
+        <!-- lista, containers -->
+        <div id="tasks-container">
+
+            <div class="task-group">
+                <h2>&#9207; New task</h2>
+                <ul>
+                    <li>
+                        <span class="icon check">&check;</span> Quarterly newsletter <span class="category cat-editorial">Editorial</span>
+                    </li>
+                   
+                </ul>
             </div>
+
+            <div class="task-group">
+                <h2>&#9207; Today</h2>
+                <ul>
+                    <li>
+                        <span class="icon check">&check;</span> Recruiting blog post <span class="category cat-editorial">Editorial</span>
+                    </li>
+                    <li>
+                        <span class="icon check">&check;</span> Mobile app launch <span class="category cat-goals">Q1 Goals</span>
+                    </li>
+                    <li>
+                        <span class="icon cross">&cross;</span> Interview John H. <span class="category cat-recruiting">Recruiting</span>
+                    </li>
+                    <li>
+                        <span class="icon check">&check;</span> Submit update to mobile storefronts <span class="category cat-mobile">Mobile</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="task-group">
+                <h2>&#9207; Upcoming</h2>
+                <ul>
+                    <li>
+                        <span class="icon cross">&cross;</span> Schedule meeting with Alex
+                    </li>
+                    <li>
+                        <span class="icon check">&check;</span> Homepage refresh <span class="category cat-website">Website</span>
+                    </li>
+                    <li>
+                        <span class="icon cross">&cross;</span> Interview John H. <span class="category cat-sales">Sales</span>
+                    </li>
+                    <li>
+                        <span class="icon check">&check;</span> Submit update to mobile storefronts <span class="category cat-editorial">Editorial</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
         
-        </section>  
-</div>
-</div>       
+
+        
+
+    </main>
+
 </body>
 </html>

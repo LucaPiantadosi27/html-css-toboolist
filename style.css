@@ -1,155 +1,159 @@
-/* Resetto la pagina */
-*{
+* { /* reset */
     margin: 0;
     box-sizing: border-box;
 }
-/* imposto il background color del body */
-body{
-    background-color: rgba(230, 242, 247, 0.89);
+
+
+
+body {
+    font-family: sans-serif;
+
+    background-color: #F6F8F9;
 }
-.navbar{
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 50px;
-   
+
+/*  imposto settaggi header */
+header {
+    padding: 12px 28px;
+
+    margin-bottom: 36px;
+
+    background-color: white;
 }
-.Toboolisttext{
+
+#logo {
+    vertical-align: middle;
+}
+
+h1 {
     display: inline-block;
-    font-weight: bolder;
-    font-size: 60px;
+
+    vertical-align: middle;
+
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/* imposto colore e margini main */
+main {
     
-}
-#logo{
-    height: 70px;
+
+    width: 70%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-color: white;
 }
 
-/* impostazioni grafiche bottoni */
-.twobutton {
-    border-radius: 5px;
-    height: 60px;
-    background-color: white;
-    margin-bottom: 5px;
-    margin-left: 300px;
-    margin-right:300px
+#buttons {
+
+
+    padding: 22px 48px;
+
+    border-bottom: 2px solid #f5f7f8;
+}
+
+button {
+    padding: 8px 16px;
+
+    border-radius: 6px;
+    border: 3px solid #ced3d7;
+
+    background-color: transparent;
+
+    color: #ced3d7;
+    font-weight: bold;
+}
+
+.btn-primary {
+    border-color: #47acf0;
+
+    background-color: #47acf0;
+    color: white;
+}
+
+/* imposto settaggi grafici lista task */
+#tasks-container {
+    padding: 36px 48px;
+}
+
+.task-group {
+    margin-bottom: 36px;
+}
+
+
+h2 {
+    color: #454952;
+    font-size: 26px;
+
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 14px;
+
+    font-size: 22px;
+}
+
+.icon {
+    display: inline-block;
+
+    height: 26px;
+    width: 26px;
+
+    border: black 1px solid;
+    border-radius: 50%;
+
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.check {
+    color: #61BEA7;
+    border-color: #61BEA7;
+}
+
+.cross {
+    color: #E7372F;
+    border-color: #E7372F;
+}
+
+
+
+.category {
+    padding: 10px 16px;
+
+    border-radius: 16px;
     
-}
-.buttons {
-    padding-top: 20px;
-    padding-left: 70px;
-}
-
-#A{
-    height: 30px;
-    width: 90px;
+    background-color: black;
     color: white;
-    background-color: rgb(74, 137, 253);
-    border-radius: 5px;
-    
+
+    font-size: 0.6em;
 }
 
-#B{
-    height: 30px;
-    width: 110px;
-    background-color: white;
-    color: darkgrey;
-    border-radius: 5px;
+.cat-editorial {
+    background-color: #45aae9;
 }
-/* impostazioni grafiche testo */
-.container2{
-    border-radius: 5px;
-    height: 500px;
-    background-color: white;
-    margin-left: 300px;
-    margin-right: 300px 
+.cat-goals {
+    background-color: #9b72e3;
 }
-
-.high{
-    font-weight: bolder;
-    font-size: large;
+.cat-recruiting {
+    background-color: #64bfa8;
+}
+.cat-mobile {
+    background-color: #f19d33;
+}
+.cat-website {
+    background-color: #d763a0;
+}
+.cat-sales {
+    background-color: #afc826;
 }
 
-.editorial{
-    height: 30px;
-    color: white;
-    background-color: rgb(74, 137, 253);
-    border-radius: 5px;
-    font-size: small;
-}
 
-#Q1{
-    height: 30px;
-    color: white;
-    background-color: rgb(157, 74, 253);
-    border-radius: 5px;
-    font-size: small;
-}
-
-#rec{
-    height: 30px;
-    color: white;
-    background-color: rgb(28, 219, 162);
-    border-radius: 5px;
-    font-size: small;
-}
-
-#Q1{
-    height: 30px;
-    color: white;
-    background-color: rgb(157, 74, 253);
-    border-radius: 5px;
-    font-size: small;
-}
-#mob{
-    height: 30px;
-    color: white;
-    background-color: rgb(157, 74, 253);
-    border-radius: 5px;
-    font-size: small;
-}
-
-#mob{
-    height: 30px;
-    color: white;
-    background-color: rgb(228, 130, 18);
-    border-radius: 5px;
-    font-size: small;
-}
-
-#web{
-    height: 30px;
-    color: white;
-    background-color: rgba(233, 82, 247, 0.753);
-    border-radius: 5px;
-    font-size: small;
-}
-
-#sal{
-    height: 30px;
-    color: white;
-    background-color: rgb(126, 218, 65);
-    border-radius: 5px;
-    font-size: small;
-}
-
-p{
-    font-weight: bolder;
-    font-size: large;
-    margin-top: 8px;
-}
-/* ridimensiono e distanzio i div con il testo */
-
-.newtask{
-    padding-top: 40px;
-    padding-left: 70px;
-    padding-bottom: 30px;
-}
-
-.today{
-    padding-left: 70px;
-    padding-bottom: 30px;
-}
-
-.upcoming{
-    padding-left: 70px;
-    padding-bottom: 30px;
-}
