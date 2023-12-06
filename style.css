@@ -1,8 +1,8 @@
-* { /* reset */
+* { 
     margin: 0;
     box-sizing: border-box;
 }
-
+/* reset */
 
 
 body {
@@ -124,8 +124,6 @@ li {
     border-color: #E7372F;
 }
 
-
-
 .category {
     padding: 10px 16px;
 
@@ -155,5 +153,3 @@ li {
 .cat-sales {
     background-color: #afc826;
 }
-
-
